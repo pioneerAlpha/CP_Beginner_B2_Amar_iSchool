@@ -27,7 +27,10 @@ int main()
             }
         }
 
-        if(cnt >= 2 && tot >=l && tot <= r , mxx - mnn >= x) ans++;
+        if(cnt >= 2 && tot >=l && tot <= r && mxx - mnn >= x){
+//            cout<<mask<<" ";
+            ans++;
+        }
     }
     cout<<ans<<endl;
     return 0;

@@ -19,7 +19,7 @@ int main()
         ll n;
         cin>>n;
         ll ans = 1;
-        for(int i = 2 ; i<=10 ; i++) ans = ans*(i/__gcd(i,ans));
+        for(ll i = 2 ; i<=10 ; i++) ans = ans*(i/__gcd(i,ans));
         ans = n/ans;
         cout<<ans<<endl;
     }

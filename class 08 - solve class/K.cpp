@@ -8,7 +8,7 @@
 
 using namespace std;
 
-int mark[2 + (MAXP/32)] , ord[MAXP+2];
+int mark[2 + (MAXP/32)] ;
 
 vector < int > prime;
 
@@ -23,12 +23,10 @@ void sieve(int n)
             }
         }
     }
-//    prime.push_back(2);
-    int tot = 1;
-    ord[2] = 1;
+    prime.push_back(2);
     for(int i = 3 ; i<=n ; i += 2){
         int idx = i>>5 , pos = i&31;
-        if((mark[idx] & (1<<pos)) == 0) ord[i] = ++tot;
+        if((mark[idx] & (1<<pos)) == 0) prime.push_back(i);
     }
 }
 

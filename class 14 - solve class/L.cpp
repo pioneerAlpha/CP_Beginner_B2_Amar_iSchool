@@ -25,7 +25,7 @@ int main()
     cin>>a>>b>>x>>y;
     ll lef = 0 , rig = MAX;
     while(lef < rig){
-        ll mid = (lef + rig)/2;
+        ll mid = (lef + rig + 1)/2;
         if(a >= x*mid && b >= y*mid) lef = mid;
         else rig = mid-1;
     }

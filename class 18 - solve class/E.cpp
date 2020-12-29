@@ -39,6 +39,8 @@ void bfs(vector < pair < int , int > > vec)
 int main()
 {
 
+    freopen ("input.txt","r",stdin);
+    freopen ("output.txt","w",stdout);
     fastio;
 
     int t , caseno = 1;
